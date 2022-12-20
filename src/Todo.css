@@ -13,6 +13,7 @@
 .Todo-task {
   position: relative;
   transition: opacity 0.4s linear;
+  cursor: pointer;
 }
 .Todo-task.completed {
   transition: opacity 300ms ease-in-out;

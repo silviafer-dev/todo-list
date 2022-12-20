@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./Todo.css";
 
-const Todo = ({ task, removeTodo, id, updateTodo, completed, toggleTodo }) => {
+const Todo = ({ id, task, completed, removeTodo, updateTodo, toggleTodo }) => {
   const [edit, setEdit] = useState({
-    task: { task },
+    task: task,
     isEditing: false,
   });
 
@@ -48,10 +48,10 @@ const Todo = ({ task, removeTodo, id, updateTodo, completed, toggleTodo }) => {
       <div className="Todo-buttons">
         <div className="Todo-buttons-left">
           <button onClick={toggleForm}>
-            <i class="fas fa-pen" />
+            <i className="fas fa-pen" />
           </button>
           <button onClick={handleRemove}>
-            <i class="fas fa-trash" />
+            <i className="fas fa-trash" />
           </button>
         </div>
         <li
